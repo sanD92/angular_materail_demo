@@ -1,9 +1,7 @@
 <div class="container">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
     <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
+                The actual rendered columns are set as a property on the row definition" -->
     <!-- Position Column -->
     <ng-container matColumnDef="position">
       <th mat-header-cell *matHeaderCellDef> No. </th>
@@ -13,24 +11,37 @@
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> File Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon class="success-icon">check_circle</mat-icon>
+         {{element.value}}
+       </td>
     </ng-container>
 
     <!-- Primary raio buttoon -->
     <ng-container matColumnDef="primary">
-        <th class="headerCell" mat-header-cell *matHeaderCellDef>primary</th>
-        <td class="radioButtonCell" mat-cell *matCellDef="let element">
-          <mat-radio-button (change)="setIsPrimary(element)" [name]="element.key" value="element.value">
-            {{element.key}}
+      <th class="headerCell" mat-header-cell *matHeaderCellDef>primary</th>
+      <td class="radioButtonCell" mat-cell *matCellDef="let element">
+       <mat-radio-group name="primaryGroup">
+          <mat-radio-button (change)="setIsPrimary(element)" name="primaryGroup"  
+          [checked]="element.isPrimary" [value]="element.key"> 
+          <label>Primary</label>
           </mat-radio-button>
-        </td>
-      </ng-container>
+        </mat-radio-group>  
+      </td>
+    </ng-container>
+
+    <!-- Delete buttoon -->
+    <ng-container matColumnDef="delete">
+      <th class="headerCell" mat-header-cell *matHeaderCellDef>Delete</th>
+      <td class="radioButtonCell" mat-cell *matCellDef="let element">
+        <button mat-button color='primary' (click)='deleteFile(element)'>
+          <mat-icon>delete_forever</mat-icon>Delete</button>
+      </td>
+    </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-    <mat-paginator #paginator [pageSize]="3" [pageSizeOptions]="[10, 20, 10]">
-    </mat-paginator>
-
+    
   </table>
+    <mat-paginator class="mat-elevation-z8" [pageSizeOptions]="[5,10, 20, 30]" showFirstLastButtons></mat-paginator>
 </div>

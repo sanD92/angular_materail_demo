@@ -1,13 +1,19 @@
 table {
     padding: 10%;
-    width: 80%;
+    width:804.5px;
     align-self: center;
     border: 2px dashed rgb(216, 213, 213);
-    top: -8px;
-    bottom: -8px;
-    left: -8px;
-    right: -8px;
+    border-bottom:none;
   }
+.mat-paginator{
+    position: absolute;
+    width:800px;
+    align-self: center;
+    border: 2px dashed rgb(216, 213, 213);
+   
+    border-top: none
+}
+
  /*  .mat-column- {
     display: flex;
     justify-content: flex-end;
@@ -17,4 +23,7 @@ table {
     text-align: left;
     width: 800px;
     padding-top: 100px
+}
+.success-icon {
+    -webkit-text-fill-color:green
 }

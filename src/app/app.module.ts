@@ -8,7 +8,10 @@ import { MatTableDemoComponent } from './mat-table-demo/mat-table-demo.component
 import { FormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import { MatFormFieldModule, MatInputModule, MatPaginatorModule, MatTableModule, MatSortModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,9 @@ import { MatFormFieldModule, MatInputModule, MatPaginatorModule, MatTableModule,
     MatPaginatorModule, 
     MatTableModule, 
     MatSortModule ,
-    MatRadioModule
+    MatRadioModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
