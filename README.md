@@ -6,8 +6,12 @@ This projectc covers how to implement data table in Angular Materia 7 and add ra
 
 This project intent is to cover all Angular Material concept in practical. Project can help other developers to understand how they implement Angular Material UI .
 
-
-
+## Developer information
+    Sandip Bailkar,
+    Full Stack Developer
+    Persistent System LTD,
+    7756865884
+    
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
