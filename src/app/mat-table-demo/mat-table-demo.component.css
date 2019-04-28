@@ -1,0 +1,20 @@
+table {
+    padding: 10%;
+    width: 80%;
+    align-self: center;
+    border: 2px dashed rgb(216, 213, 213);
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+  }
+ /*  .mat-column- {
+    display: flex;
+    justify-content: flex-end;
+    } */
+.container{
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+    padding-top: 100px
+}
