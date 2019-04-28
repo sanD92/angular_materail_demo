@@ -1,10 +1,10 @@
 # AngularMaterialDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0.
-
 This projectc covers how to implement data table in Angular Materia 7 and add radio button ,delete button in table and all event handling activity.
 
 This project intent is to cover all Angular Material concept in practical. Project can help other developers to understand how they implement Angular Material UI .
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0.
 
 ## Developer information
     Sandip Bailkar,
